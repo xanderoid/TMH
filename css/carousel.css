@@ -1,11 +1,16 @@
 /* GLOBAL STYLES
 -------------------------------------------------- */
-/* Padding below the footer and lighter body text */
+html {
+  position: relative;
+  min-height: 100%;
+}
 
+/* Padding below the footer and lighter body text */
 body {
-  padding-bottom: 40px;
+
   color: #5a5a5a;
   font-family: "Open Sans", sans-serif;
+  margin-bottom: 70px;
 }
 
 h2 {
@@ -116,7 +121,7 @@ h2 {
   font-weight: 300;
   line-height: 1;
   letter-spacing: -1px;
-  margin: 0 0;
+  margin: 0 0 10% 0;
 }
 
 /* match margin with h2 default*/
@@ -129,7 +134,8 @@ h2 {
 ---------------------------------------- */
 footer {
   text-align: center;
-  position: absolute;  
+  position: absolute;
+  bottom: 0;
   height: 70px;
   background-color: #101010;
   width: 100%;
