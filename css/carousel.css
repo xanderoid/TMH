@@ -8,11 +8,12 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
-
+h2 {
+  font-size: 2em;
+}
 
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
-
 /* Special class on .container surrounding .navbar, used for positioning it into place. */
 .navbar-wrapper {
   position: fixed;
@@ -44,6 +45,9 @@ body {
   font-size: 2em;
   margin-left: 0 !important;
 }
+
+
+
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
 /*need to add some sizing and positioning rules to pictures*/
@@ -79,7 +83,6 @@ body {
 
 /* MARKETING CONTENT
 -------------------------------------------------- */
-
 /* Pad the edges of the mobile views a bit */
 .marketing {
   padding-right: 15px;
@@ -102,13 +105,13 @@ body {
 
 /* Featurettes
 ------------------------- */
-
 .featurette-divider {
   margin: 100px 0; /* Space out the Bootstrap <hr> more */
 }
 
 /* Thin out the marketing headings */
 .featurette-heading {
+  font-size: 2em;
   font-weight: 300;
   line-height: 1;
   letter-spacing: -1px;
@@ -141,13 +144,14 @@ footer {
 
 
 
-/* Contact Page
+/* CONTACT PAGE
 ------------------------------------------------------------ */
 .contact-info {
   list-style: none;
   padding: 0;
   margin: 0;
   font-size: 0.9em;
+
 }
 
 .contact-info a {
@@ -168,7 +172,41 @@ footer {
 }
 .contact-info li.fbook a{
   background-image: url('../img/facebook.png');
+}
 
+
+/* PORTFOLIO PAGES
+-------------------------------------------------- */
+/* Center Gallery Heading*/
+#center-heading {
+  margin-top: 0px;
+  margin-bottom: 100px;
+}
+
+/*centers containing div, centering imgs*/
+#center-gallery {
+  text-align: center;
+}
+
+/* Gallery layout */
+.gallery {
+  list-style-type: none;
+  margin: 0 auto;
+  padding-left: 0;
+
+}
+/*display inline for gallery look*/
+.gallery li {
+  display: inline;
+
+}
+
+/* size thumbnail images */
+.gallery li img {
+  width: 180px;
+  margin: 10px 10px;
+
+}
 
 
 
@@ -183,7 +221,7 @@ footer {
     padding-left: 0;
   }
 
-  }
+
   .navbar-wrapper .navbar {
     padding-right: 0;
     padding-left:  0;
@@ -199,6 +237,7 @@ footer {
   .featurette-heading {
     font-size: 50px;
   }
+
 }
 
 @media (min-width: 992px) {
