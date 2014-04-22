@@ -220,8 +220,17 @@ footer p {
 
 /*style overlay images*/
 #overlay img {
-  margin: 10% auto;
+  display: block;
+  margin: 100px auto 0;
   text-align: center;
+  max-height: 75%;
+  max-width: 75%;
+}
+
+#overlay p {
+  text-align: center;
+  color: white;
+  font-size: 1em;
 }
 
 
