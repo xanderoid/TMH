@@ -58,7 +58,7 @@ h2 {
 
 .carousel {
   max-height: 500px;
-  margin-bottom: 60px;
+/*  margin-bottom: 60px;*/
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
@@ -105,8 +105,10 @@ h2 {
 
 /* Featurettes
 ------------------------- */
+/* Space out the Bootstrap <hr> more */
 .featurette-divider {
-  margin: 100px 0; /* Space out the Bootstrap <hr> more */
+  margin-top: 100px;
+  margin-bottom: 50px;
 }
 
 /* Thin out the marketing headings */
@@ -115,16 +117,12 @@ h2 {
   font-weight: 300;
   line-height: 1;
   letter-spacing: -1px;
+  margin: 0 0;
 }
 
 /* match margin with h2 default*/
 .featurette-image {
   margin-top: 20px;
-}
-
-/*reset default margin for h2*/
-.featurette-heading h2 {
-  margin: 0;
 }
 
 
@@ -180,7 +178,7 @@ footer {
 /* Center Gallery Heading*/
 #center-heading {
   margin-top: 0px;
-  margin-bottom: 100px;
+  margin-bottom: 25px;
 }
 
 /*centers containing div, centering imgs*/
@@ -203,7 +201,7 @@ footer {
 
 /* size thumbnail images */
 .gallery li img {
-  width: 180px;
+  width: 120px;
   margin: 10px 10px;
 
 }
@@ -237,6 +235,13 @@ footer {
   .featurette-heading {
     font-size: 50px;
   }
+
+  /*Bump up size of gallery thumbnails*/
+  .gallery li img {
+  width: 180px;
+  margin: 10px 10px;
+
+}
 
 }
 
