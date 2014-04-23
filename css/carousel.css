@@ -1,18 +1,24 @@
 /* GLOBAL STYLES
 -------------------------------------------------- */
-/* Padding below the footer and lighter body text */
-
-body {
-  padding-bottom: 40px;
-  color: #5a5a5a;
-  font-family: "Open Sans", sans-serif;
+html {
+  position: relative;
+  min-height: 100%;
 }
 
+/* Padding below the footer and lighter body text */
+body {
 
+  color: #5a5a5a;
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 70px;
+}
+
+h2 {
+  font-size: 1.75em;
+}
 
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
-
 /* Special class on .container surrounding .navbar, used for positioning it into place. */
 .navbar-wrapper {
   position: fixed;
@@ -44,6 +50,9 @@ body {
   font-size: 2em;
   margin-left: 0 !important;
 }
+
+
+
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
 /*need to add some sizing and positioning rules to pictures*/
@@ -54,7 +63,7 @@ body {
 
 .carousel {
   max-height: 500px;
-  margin-bottom: 60px;
+/*  margin-bottom: 60px;*/
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
@@ -79,7 +88,6 @@ body {
 
 /* MARKETING CONTENT
 -------------------------------------------------- */
-
 /* Pad the edges of the mobile views a bit */
 .marketing {
   padding-right: 15px;
@@ -102,9 +110,10 @@ body {
 
 /* Featurettes
 ------------------------- */
-
+/* Space out the Bootstrap <hr> more */
 .featurette-divider {
-  margin: 100px 0; /* Space out the Bootstrap <hr> more */
+  margin-top: 100px;
+  margin-bottom: 50px;
 }
 
 /* Thin out the marketing headings */
@@ -112,6 +121,7 @@ body {
   font-weight: 300;
   line-height: 1;
   letter-spacing: -1px;
+  margin: 0 0 10% 0;
 }
 
 /* match margin with h2 default*/
@@ -119,35 +129,35 @@ body {
   margin-top: 20px;
 }
 
-/*reset default margin for h2*/
-.featurette-heading h2 {
-  margin: 0;
-}
-
 
 /* Footer
 ---------------------------------------- */
 footer {
   text-align: center;
-  position: absolute;  
-  height: 50px;
+  position: absolute;
+  bottom: 0;
+  height: 70px;
   background-color: #101010;
   width: 100%;
-  padding-top: 15px;
+  padding: 15px 15px;
+
+}
+
+/*remove default <p> bottom margin for footer*/
+footer p {
   margin: 0;
 }
 
 
 
-
-
-/* Contact Page
+/* CONTACT PAGE
 ------------------------------------------------------------ */
 .contact-info {
   list-style: none;
   padding: 0;
   margin: 0;
   font-size: 0.9em;
+
 }
 
 .contact-info a {
@@ -168,7 +178,66 @@ footer {
 }
 .contact-info li.fbook a{
   background-image: url('../img/facebook.png');
+}
 
+
+/* PORTFOLIO PAGES
+-------------------------------------------------- */
+/* Center Gallery Heading*/
+#center-heading {
+  margin-top: 100px;
+  margin-bottom: 25px;
+}
+
+/*centers containing div, centering imgs*/
+#center-gallery {
+  text-align: center;
+}
+
+/* Gallery layout */
+#imageGallery {
+  list-style-type: none;
+  margin: 0 auto;
+  padding-left: 0;
+
+}
+/*display inline for gallery look*/
+#imageGallery li {
+  display: inline;
+
+}
+
+/* size thumbnail images */
+#imageGallery li img {
+  width: 120px;
+  margin: 10px 10px;
+}
+
+/*styling for overlay of lightbox*/
+#overlay {
+  background: rgba(0,0,0,0.7);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+/*style overlay images*/
+#overlay img {
+  display: block;
+  margin: 100px auto 0;
+  text-align: center;
+  max-height: 75%;
+  max-width: 75%;
+}
+
+#overlay p {
+  text-align: center;
+  color: white;
+  font-size: 1em;
+}
 
 
 
@@ -183,7 +252,7 @@ footer {
     padding-left: 0;
   }
 
-  }
+
   .navbar-wrapper .navbar {
     padding-right: 0;
     padding-left:  0;
@@ -199,6 +268,13 @@ footer {
   .featurette-heading {
     font-size: 50px;
   }
+
+  /*Bump up size of gallery thumbnails*/
+  .gallery li img {
+  width: 180px;
+  margin: 10px 10px;
+  }
+
 }
 
 @media (min-width: 992px) {
